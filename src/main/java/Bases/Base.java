@@ -10,36 +10,32 @@ import org.testng.annotations.DataProvider;
 
 import Util.ReadExcel;
 
-
 public class Base {
 	public String excelFileName;
-		
-		public static FirefoxDriver driver;
+
+	public static FirefoxDriver driver;
 
 	@BeforeMethod
-			public void launchApp() 
-	{
-				
-				System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver");
-				driver=new FirefoxDriver();
+	public void launchApp() {
+
+		System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver");
+		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("http://leaftaps.com/opentaps/");
-		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		}
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	}
 
-		@AfterMethod
-		private void closeApp(){
+	@AfterMethod
+	private void closeApp() {
 		driver.close();
-	
-		}
-		@DataProvider(name="fetchData")
-		public String[][] sendData() throws IOException {
-			ReadExcel excel = new ReadExcel();
-			//return excel.excelRead(excelFileName);
-			return excel.readData(excelFileName);
-		}
 
 	}
 
+	@DataProvider(name = "fetchData")
+	public String[][] sendData() throws IOException {
+		ReadExcel excel = new ReadExcel();
+		// return excel.excelRead(excelFileName);
+		return excel.readData(excelFileName);
+	}
 
-
+}
