@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5554" started-at="2019-06-20T12:56:18Z" finished-at="2019-06-20T12:56:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5554" started-at="2019-06-20T12:56:18Z" finished-at="2019-06-20T12:56:24Z">
+      <class name="TestCases.TC001">
+        <test-method status="PASS" signature="setData()[pri:0, instance:TestCases.TC001@6fd02e5]" name="setData" is-config="true" duration-ms="8" started-at="2019-06-20T12:56:18Z" finished-at="2019-06-20T12:56:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:TestCases.TC001@6fd02e5]" name="launchApp" is-config="true" duration-ms="2767" started-at="2019-06-20T12:56:19Z" finished-at="2019-06-20T12:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="runLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.TC001@6fd02e5]" name="runLogin" duration-ms="253" started-at="2019-06-20T12:56:21Z" data-provider="fetchData" finished-at="2019-06-20T12:56:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLogin -->
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:TestCases.TC001@6fd02e5]" name="launchApp" is-config="true" duration-ms="2091" started-at="2019-06-20T12:56:22Z" finished-at="2019-06-20T12:56:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="runLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.TC001@6fd02e5]" name="runLogin" duration-ms="262" started-at="2019-06-20T12:56:24Z" data-provider="fetchData" finished-at="2019-06-20T12:56:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoCSR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLogin -->
+      </class> <!-- TestCases.TC001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
